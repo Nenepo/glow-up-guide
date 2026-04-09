@@ -1,1019 +1,1722 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Your Glow Up Guide</title>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
-<style>
-  :root {
-    --ink: #1a1208;
-    --gold: #b8922a;
-    --gold-light: #e8c96a;
-    --gold-pale: #f9f2e3;
-    --rose: #c4726a;
-    --rose-pale: #fdf0ee;
-    --sage: #5a7a5e;
-    --sage-pale: #eef4ef;
-    --cream: #fdfaf5;
-    --warm-gray: #8a8070;
-    --border: rgba(184,146,42,0.18);
-    --card-bg: #ffffff;
-  }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Glow Up Guide</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Jost:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --ink: #1a1208;
+        --gold: #b8922a;
+        --gold-light: #e8c96a;
+        --gold-pale: #f9f2e3;
+        --rose: #c4726a;
+        --rose-pale: #fdf0ee;
+        --sage: #5a7a5e;
+        --sage-pale: #eef4ef;
+        --cream: #fdfaf5;
+        --warm-gray: #8a8070;
+        --border: rgba(184, 146, 42, 0.18);
+        --card-bg: #ffffff;
+      }
 
-  * { box-sizing: border-box; margin: 0; padding: 0; }
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
 
-  body {
-    font-family: 'Jost', sans-serif;
-    background: var(--cream);
-    color: var(--ink);
-    min-height: 100vh;
-    overflow-x: hidden;
-  }
+      body {
+        font-family: "Jost", sans-serif;
+        background: var(--cream);
+        color: var(--ink);
+        min-height: 100vh;
+        overflow-x: hidden;
+      }
 
-  /* ── HERO ── */
-  .hero {
-    background: var(--ink);
-    min-height: 260px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 48px 24px 36px;
-    position: relative;
-    overflow: hidden;
-    text-align: center;
-  }
+      /* ── HERO ── */
+      .hero {
+        background: var(--ink);
+        min-height: 260px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 48px 24px 36px;
+        position: relative;
+        overflow: hidden;
+        text-align: center;
+      }
 
-  .hero-bg {
-    position: absolute; inset: 0;
-    background:
-      radial-gradient(ellipse 60% 50% at 20% 80%, rgba(184,146,42,0.18) 0%, transparent 60%),
-      radial-gradient(ellipse 50% 60% at 80% 20%, rgba(196,114,106,0.15) 0%, transparent 60%);
-  }
+      .hero-bg {
+        position: absolute;
+        inset: 0;
+        background:
+          radial-gradient(
+            ellipse 60% 50% at 20% 80%,
+            rgba(184, 146, 42, 0.18) 0%,
+            transparent 60%
+          ),
+          radial-gradient(
+            ellipse 50% 60% at 80% 20%,
+            rgba(196, 114, 106, 0.15) 0%,
+            transparent 60%
+          );
+      }
 
-  .hero-ornament {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 72px;
-    color: rgba(184,146,42,0.12);
-    position: absolute;
-    top: 10px; right: 16px;
-    font-style: italic;
-    line-height: 1;
-    pointer-events: none;
-  }
+      .hero-ornament {
+        font-family: "Cormorant Garamond", serif;
+        font-size: 72px;
+        color: rgba(184, 146, 42, 0.12);
+        position: absolute;
+        top: 10px;
+        right: 16px;
+        font-style: italic;
+        line-height: 1;
+        pointer-events: none;
+      }
 
-  .hero-eyebrow {
-    font-size: 10px;
-    font-weight: 600;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    color: var(--gold-light);
-    margin-bottom: 12px;
-    position: relative;
-    z-index: 1;
-  }
+      .hero-eyebrow {
+        font-size: 10px;
+        font-weight: 600;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        color: var(--gold-light);
+        margin-bottom: 12px;
+        position: relative;
+        z-index: 1;
+      }
 
-  .hero h1 {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 38px;
-    font-weight: 700;
-    color: #fff;
-    line-height: 1.15;
-    position: relative;
-    z-index: 1;
-    margin-bottom: 10px;
-  }
+      .hero h1 {
+        font-family: "Cormorant Garamond", serif;
+        font-size: 38px;
+        font-weight: 700;
+        color: #fff;
+        line-height: 1.15;
+        position: relative;
+        z-index: 1;
+        margin-bottom: 10px;
+      }
 
-  .hero h1 em {
-    font-style: italic;
-    color: var(--gold-light);
-  }
+      .hero h1 em {
+        font-style: italic;
+        color: var(--gold-light);
+      }
 
-  .hero-sub {
-    font-size: 13px;
-    color: rgba(255,255,255,0.55);
-    font-weight: 300;
-    position: relative;
-    z-index: 1;
-    line-height: 1.6;
-    max-width: 300px;
-  }
+      .hero-sub {
+        font-size: 13px;
+        color: rgba(255, 255, 255, 0.55);
+        font-weight: 300;
+        position: relative;
+        z-index: 1;
+        line-height: 1.6;
+        max-width: 300px;
+      }
 
-  .pillars {
-    display: flex;
-    gap: 8px;
-    margin-top: 18px;
-    flex-wrap: wrap;
-    justify-content: center;
-    position: relative;
-    z-index: 1;
-  }
+      .pillars {
+        display: flex;
+        gap: 8px;
+        margin-top: 18px;
+        flex-wrap: wrap;
+        justify-content: center;
+        position: relative;
+        z-index: 1;
+      }
 
-  .pillar {
-    font-size: 11px;
-    font-weight: 500;
-    padding: 4px 12px;
-    border-radius: 20px;
-    border: 1px solid rgba(232,201,106,0.35);
-    color: rgba(232,201,106,0.85);
-    background: rgba(232,201,106,0.07);
-  }
+      .pillar {
+        font-size: 11px;
+        font-weight: 500;
+        padding: 4px 12px;
+        border-radius: 20px;
+        border: 1px solid rgba(232, 201, 106, 0.35);
+        color: rgba(232, 201, 106, 0.85);
+        background: rgba(232, 201, 106, 0.07);
+      }
 
-  /* ── TABS ── */
-  .tabs {
-    display: flex;
-    overflow-x: auto;
-    scrollbar-width: none;
-    background: #fff;
-    border-bottom: 1px solid var(--border);
-    padding: 0 4px;
-    position: sticky;
-    top: 0;
-    z-index: 10;
-    box-shadow: 0 2px 12px rgba(26,18,8,0.06);
-  }
-  .tabs::-webkit-scrollbar { display: none; }
+      /* ── TABS ── */
+      .tabs {
+        display: flex;
+        overflow-x: auto;
+        scrollbar-width: none;
+        background: #fff;
+        border-bottom: 1px solid var(--border);
+        padding: 0 4px;
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        box-shadow: 0 2px 12px rgba(26, 18, 8, 0.06);
+      }
+      .tabs::-webkit-scrollbar {
+        display: none;
+      }
 
-  .tab {
-    flex-shrink: 0;
-    padding: 13px 16px;
-    font-size: 12px;
-    font-weight: 500;
-    color: var(--warm-gray);
-    cursor: pointer;
-    border-bottom: 2px solid transparent;
-    transition: all 0.2s;
-    white-space: nowrap;
-    letter-spacing: 0.3px;
-  }
-  .tab.active {
-    color: var(--gold);
-    border-bottom-color: var(--gold);
-    font-weight: 600;
-  }
+      .tab {
+        flex-shrink: 0;
+        padding: 13px 16px;
+        font-size: 12px;
+        font-weight: 500;
+        color: var(--warm-gray);
+        cursor: pointer;
+        border-bottom: 2px solid transparent;
+        transition: all 0.2s;
+        white-space: nowrap;
+        letter-spacing: 0.3px;
+      }
+      .tab.active {
+        color: var(--gold);
+        border-bottom-color: var(--gold);
+        font-weight: 600;
+      }
 
-  /* ── SECTIONS ── */
-  .section { display: none; padding: 22px 16px 48px; animation: fadeUp 0.3s ease; }
-  .section.active { display: block; }
+      /* ── SECTIONS ── */
+      .section {
+        display: none;
+        padding: 22px 16px 48px;
+        animation: fadeUp 0.3s ease;
+      }
+      .section.active {
+        display: block;
+      }
 
-  @keyframes fadeUp {
-    from { opacity: 0; transform: translateY(8px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
+      @keyframes fadeUp {
+        from {
+          opacity: 0;
+          transform: translateY(8px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
 
-  .sec-title {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 26px;
-    font-weight: 700;
-    color: var(--ink);
-    margin-bottom: 4px;
-  }
-  .sec-sub {
-    font-size: 13px;
-    color: var(--warm-gray);
-    line-height: 1.6;
-    margin-bottom: 22px;
-    font-weight: 300;
-  }
+      .sec-title {
+        font-family: "Cormorant Garamond", serif;
+        font-size: 26px;
+        font-weight: 700;
+        color: var(--ink);
+        margin-bottom: 4px;
+      }
+      .sec-sub {
+        font-size: 13px;
+        color: var(--warm-gray);
+        line-height: 1.6;
+        margin-bottom: 22px;
+        font-weight: 300;
+      }
 
-  /* ── CARDS ── */
-  .card {
-    background: var(--card-bg);
-    border-radius: 18px;
-    padding: 18px;
-    margin-bottom: 14px;
-    border: 1px solid var(--border);
-    box-shadow: 0 2px 16px rgba(26,18,8,0.04);
-  }
+      /* ── CARDS ── */
+      .card {
+        background: var(--card-bg);
+        border-radius: 18px;
+        padding: 18px;
+        margin-bottom: 14px;
+        border: 1px solid var(--border);
+        box-shadow: 0 2px 16px rgba(26, 18, 8, 0.04);
+      }
 
-  .card-header {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    margin-bottom: 16px;
-  }
+      .card-header {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 16px;
+      }
 
-  .card-icon {
-    width: 44px; height: 44px;
-    border-radius: 14px;
-    display: flex; align-items: center; justify-content: center;
-    font-size: 22px;
-    flex-shrink: 0;
-  }
+      .card-icon {
+        width: 44px;
+        height: 44px;
+        border-radius: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 22px;
+        flex-shrink: 0;
+      }
 
-  .icon-gold { background: rgba(184,146,42,0.1); }
-  .icon-rose { background: rgba(196,114,106,0.1); }
-  .icon-sage { background: rgba(90,122,94,0.1); }
-  .icon-ink { background: rgba(26,18,8,0.06); }
+      .icon-gold {
+        background: rgba(184, 146, 42, 0.1);
+      }
+      .icon-rose {
+        background: rgba(196, 114, 106, 0.1);
+      }
+      .icon-sage {
+        background: rgba(90, 122, 94, 0.1);
+      }
+      .icon-ink {
+        background: rgba(26, 18, 8, 0.06);
+      }
 
-  .card-title { font-weight: 600; font-size: 15px; }
-  .card-desc { font-size: 12px; color: var(--warm-gray); margin-top: 2px; }
+      .card-title {
+        font-weight: 600;
+        font-size: 15px;
+      }
+      .card-desc {
+        font-size: 12px;
+        color: var(--warm-gray);
+        margin-top: 2px;
+      }
 
-  /* ── STEPS ── */
-  .step-list { display: flex; flex-direction: column; gap: 12px; }
+      /* ── STEPS ── */
+      .step-list {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
 
-  .step {
-    display: flex;
-    gap: 12px;
-    align-items: flex-start;
-    padding: 12px;
-    border-radius: 12px;
-    background: var(--cream);
-    transition: background 0.2s;
-  }
+      .step {
+        display: flex;
+        gap: 12px;
+        align-items: flex-start;
+        padding: 12px;
+        border-radius: 12px;
+        background: var(--cream);
+        transition: background 0.2s;
+      }
 
-  .step-num {
-    width: 28px; height: 28px;
-    border-radius: 50%;
-    display: flex; align-items: center; justify-content: center;
-    font-size: 12px;
-    font-weight: 700;
-    flex-shrink: 0;
-    color: white;
-  }
-  .num-gold { background: var(--gold); }
-  .num-rose { background: var(--rose); }
-  .num-sage { background: var(--sage); }
-  .num-ink { background: var(--ink); }
+      .step-num {
+        width: 28px;
+        height: 28px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
+        font-weight: 700;
+        flex-shrink: 0;
+        color: white;
+      }
+      .num-gold {
+        background: var(--gold);
+      }
+      .num-rose {
+        background: var(--rose);
+      }
+      .num-sage {
+        background: var(--sage);
+      }
+      .num-ink {
+        background: var(--ink);
+      }
 
-  .step-body { flex: 1; }
-  .step-name { font-size: 14px; font-weight: 600; }
-  .step-tag {
-    display: inline-block;
-    font-size: 10px;
-    font-weight: 600;
-    padding: 2px 8px;
-    border-radius: 20px;
-    margin-top: 3px;
-    margin-bottom: 4px;
-  }
-  .tag-am { background: rgba(232,201,106,0.2); color: #9a7010; }
-  .tag-pm { background: rgba(90,122,94,0.15); color: var(--sage); }
-  .tag-weekly { background: rgba(196,114,106,0.15); color: var(--rose); }
-  .tag-daily { background: rgba(26,18,8,0.07); color: var(--ink); }
+      .step-body {
+        flex: 1;
+      }
+      .step-name {
+        font-size: 14px;
+        font-weight: 600;
+      }
+      .step-tag {
+        display: inline-block;
+        font-size: 10px;
+        font-weight: 600;
+        padding: 2px 8px;
+        border-radius: 20px;
+        margin-top: 3px;
+        margin-bottom: 4px;
+      }
+      .tag-am {
+        background: rgba(232, 201, 106, 0.2);
+        color: #9a7010;
+      }
+      .tag-pm {
+        background: rgba(90, 122, 94, 0.15);
+        color: var(--sage);
+      }
+      .tag-weekly {
+        background: rgba(196, 114, 106, 0.15);
+        color: var(--rose);
+      }
+      .tag-daily {
+        background: rgba(26, 18, 8, 0.07);
+        color: var(--ink);
+      }
 
-  .step-note { font-size: 12px; color: var(--warm-gray); line-height: 1.5; }
-  .step-product { font-size: 11px; color: var(--gold); font-weight: 600; margin-top: 4px; }
+      .step-note {
+        font-size: 12px;
+        color: var(--warm-gray);
+        line-height: 1.5;
+      }
+      .step-product {
+        font-size: 11px;
+        color: var(--gold);
+        font-weight: 600;
+        margin-top: 4px;
+      }
 
-  /* ── HIGHLIGHT BOX ── */
-  .highlight {
-    border-radius: 16px;
-    padding: 18px;
-    margin-bottom: 16px;
-    position: relative;
-    overflow: hidden;
-  }
-  .highlight-gold {
-    background: linear-gradient(135deg, #1a1208, #2e2010);
-    border: 1px solid rgba(184,146,42,0.3);
-  }
-  .highlight-rose {
-    background: var(--rose-pale);
-    border: 1px solid rgba(196,114,106,0.2);
-  }
-  .highlight-sage {
-    background: var(--sage-pale);
-    border: 1px solid rgba(90,122,94,0.2);
-  }
+      /* ── HIGHLIGHT BOX ── */
+      .highlight {
+        border-radius: 16px;
+        padding: 18px;
+        margin-bottom: 16px;
+        position: relative;
+        overflow: hidden;
+      }
+      .highlight-gold {
+        background: linear-gradient(135deg, #1a1208, #2e2010);
+        border: 1px solid rgba(184, 146, 42, 0.3);
+      }
+      .highlight-rose {
+        background: var(--rose-pale);
+        border: 1px solid rgba(196, 114, 106, 0.2);
+      }
+      .highlight-sage {
+        background: var(--sage-pale);
+        border: 1px solid rgba(90, 122, 94, 0.2);
+      }
 
-  .highlight-gold h3 {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 19px;
-    color: var(--gold-light);
-    margin-bottom: 8px;
-    font-style: italic;
-  }
-  .highlight-gold p { font-size: 13px; color: rgba(255,255,255,0.7); line-height: 1.7; }
+      .highlight-gold h3 {
+        font-family: "Cormorant Garamond", serif;
+        font-size: 19px;
+        color: var(--gold-light);
+        margin-bottom: 8px;
+        font-style: italic;
+      }
+      .highlight-gold p {
+        font-size: 13px;
+        color: rgba(255, 255, 255, 0.7);
+        line-height: 1.7;
+      }
 
-  .highlight-rose h3, .highlight-sage h3 {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 18px;
-    font-weight: 700;
-    margin-bottom: 8px;
-  }
-  .highlight-rose h3 { color: var(--rose); }
-  .highlight-sage h3 { color: var(--sage); }
-  .highlight-rose p, .highlight-sage p { font-size: 13px; line-height: 1.65; color: var(--ink); }
+      .highlight-rose h3,
+      .highlight-sage h3 {
+        font-family: "Cormorant Garamond", serif;
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 8px;
+      }
+      .highlight-rose h3 {
+        color: var(--rose);
+      }
+      .highlight-sage h3 {
+        color: var(--sage);
+      }
+      .highlight-rose p,
+      .highlight-sage p {
+        font-size: 13px;
+        line-height: 1.65;
+        color: var(--ink);
+      }
 
-  /* ── LABEL ── */
-  .label {
-    font-size: 10px;
-    font-weight: 700;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: var(--gold);
-    margin-bottom: 12px;
-    margin-top: 22px;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-  }
-  .label::after {
-    content: '';
-    flex: 1;
-    height: 1px;
-    background: var(--border);
-  }
+      /* ── LABEL ── */
+      .label {
+        font-size: 10px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: var(--gold);
+        margin-bottom: 12px;
+        margin-top: 22px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+      .label::after {
+        content: "";
+        flex: 1;
+        height: 1px;
+        background: var(--border);
+      }
 
-  /* ── TIP BOX ── */
-  .tip {
-    background: var(--gold-pale);
-    border-left: 3px solid var(--gold);
-    border-radius: 0 10px 10px 0;
-    padding: 12px 14px;
-    margin-bottom: 12px;
-    font-size: 13px;
-    line-height: 1.6;
-    color: var(--ink);
-  }
-  .tip strong { color: var(--gold); }
+      /* ── TIP BOX ── */
+      .tip {
+        background: var(--gold-pale);
+        border-left: 3px solid var(--gold);
+        border-radius: 0 10px 10px 0;
+        padding: 12px 14px;
+        margin-bottom: 12px;
+        font-size: 13px;
+        line-height: 1.6;
+        color: var(--ink);
+      }
+      .tip strong {
+        color: var(--gold);
+      }
 
-  /* ── GRID ── */
-  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 14px; }
+      /* ── GRID ── */
+      .two-col {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        margin-bottom: 14px;
+      }
 
-  .mini-card {
-    background: #fff;
-    border: 1px solid var(--border);
-    border-radius: 14px;
-    padding: 14px 12px;
-  }
-  .mini-icon { font-size: 24px; margin-bottom: 8px; }
-  .mini-title { font-size: 13px; font-weight: 600; margin-bottom: 4px; }
-  .mini-note { font-size: 11px; color: var(--warm-gray); line-height: 1.4; }
+      .mini-card {
+        background: #fff;
+        border: 1px solid var(--border);
+        border-radius: 14px;
+        padding: 14px 12px;
+      }
+      .mini-icon {
+        font-size: 24px;
+        margin-bottom: 8px;
+      }
+      .mini-title {
+        font-size: 13px;
+        font-weight: 600;
+        margin-bottom: 4px;
+      }
+      .mini-note {
+        font-size: 11px;
+        color: var(--warm-gray);
+        line-height: 1.4;
+      }
 
-  /* ── OUTFIT ROW ── */
-  .outfit-row {
-    padding: 13px 0;
-    border-bottom: 1px solid var(--border);
-  }
-  .outfit-row:last-child { border-bottom: none; }
-  .outfit-occ { font-size: 10px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: var(--gold); margin-bottom: 5px; }
-  .outfit-name { font-size: 14px; font-weight: 600; }
-  .outfit-note { font-size: 12px; color: var(--warm-gray); margin-top: 3px; line-height: 1.5; }
+      /* ── OUTFIT ROW ── */
+      .outfit-row {
+        padding: 13px 0;
+        border-bottom: 1px solid var(--border);
+      }
+      .outfit-row:last-child {
+        border-bottom: none;
+      }
+      .outfit-occ {
+        font-size: 10px;
+        font-weight: 700;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        color: var(--gold);
+        margin-bottom: 5px;
+      }
+      .outfit-name {
+        font-size: 14px;
+        font-weight: 600;
+      }
+      .outfit-note {
+        font-size: 12px;
+        color: var(--warm-gray);
+        margin-top: 3px;
+        line-height: 1.5;
+      }
 
-  /* ── RITUAL ROW ── */
-  .ritual-row {
-    display: flex;
-    align-items: flex-start;
-    gap: 12px;
-    padding: 12px 0;
-    border-bottom: 1px solid var(--border);
-  }
-  .ritual-row:last-child { border-bottom: none; }
-  .ritual-time { font-size: 11px; font-weight: 700; color: var(--gold); min-width: 60px; padding-top: 2px; }
-  .ritual-body { flex: 1; }
-  .ritual-name { font-size: 14px; font-weight: 600; }
-  .ritual-note { font-size: 12px; color: var(--warm-gray); margin-top: 3px; line-height: 1.5; }
+      /* ── RITUAL ROW ── */
+      .ritual-row {
+        display: flex;
+        align-items: flex-start;
+        gap: 12px;
+        padding: 12px 0;
+        border-bottom: 1px solid var(--border);
+      }
+      .ritual-row:last-child {
+        border-bottom: none;
+      }
+      .ritual-time {
+        font-size: 11px;
+        font-weight: 700;
+        color: var(--gold);
+        min-width: 60px;
+        padding-top: 2px;
+      }
+      .ritual-body {
+        flex: 1;
+      }
+      .ritual-name {
+        font-size: 14px;
+        font-weight: 600;
+      }
+      .ritual-note {
+        font-size: 12px;
+        color: var(--warm-gray);
+        margin-top: 3px;
+        line-height: 1.5;
+      }
 
-  /* ── DIVIDER ── */
-  .divider { height: 1px; background: var(--border); margin: 18px 0; }
-</style>
-</head>
-<body>
+      /* ── DIVIDER ── */
+      .divider {
+        height: 1px;
+        background: var(--border);
+        margin: 18px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- HERO -->
+    <div class="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-ornament">✦</div>
+      <div class="hero-eyebrow">Your Personal Glow Up Blueprint</div>
+      <h1>Supple. Polished.<br /><em>Magnetic.</em></h1>
+      <p class="hero-sub">
+        Skin, hair, body, style, and the energy that attracts everything you
+        want.
+      </p>
+      <div class="pillars">
+        <span class="pillar">✦ Skin Head to Toe</span>
+        <span class="pillar">✦ Hair Care</span>
+        <span class="pillar">✦ Style</span>
+        <span class="pillar">✦ Daily Rituals</span>
+        <span class="pillar">✦ Mindset</span>
+      </div>
+    </div>
 
-<!-- HERO -->
-<div class="hero">
-  <div class="hero-bg"></div>
-  <div class="hero-ornament">✦</div>
-  <div class="hero-eyebrow">Your Personal Glow Up Blueprint</div>
-  <h1>Supple. Polished.<br><em>Magnetic.</em></h1>
-  <p class="hero-sub">Skin, hair, body, style, and the energy that attracts everything you want.</p>
-  <div class="pillars">
-    <span class="pillar">✦ Skin Head to Toe</span>
-    <span class="pillar">✦ Hair Care</span>
-    <span class="pillar">✦ Style</span>
-    <span class="pillar">✦ Daily Rituals</span>
-    <span class="pillar">✦ Mindset</span>
-  </div>
-</div>
+    <!-- TABS -->
+    <div class="tabs">
+      <div class="tab active" onclick="showTab('skin')">🌿 Skin</div>
+      <div class="tab" onclick="showTab('body')">✨ Body</div>
+      <div class="tab" onclick="showTab('hair')">💆 Hair</div>
+      <div class="tab" onclick="showTab('style')">👗 Style</div>
+      <div class="tab" onclick="showTab('feet')">👣 Feet</div>
+      <div class="tab" onclick="showTab('rituals')">🌅 Daily Rituals</div>
+      <div class="tab" onclick="showTab('mindset')">💫 Mindset</div>
+    </div>
 
-<!-- TABS -->
-<div class="tabs">
-  <div class="tab active" onclick="showTab('skin')">🌿 Skin</div>
-  <div class="tab" onclick="showTab('body')">✨ Body</div>
-  <div class="tab" onclick="showTab('hair')">💆 Hair</div>
-  <div class="tab" onclick="showTab('style')">👗 Style</div>
-  <div class="tab" onclick="showTab('rituals')">🌅 Daily Rituals</div>
-  <div class="tab" onclick="showTab('mindset')">💫 Mindset</div>
-</div>
+    <!-- ════════════════════ SKIN TAB ════════════════════ -->
+    <div id="tab-skin" class="section active">
+      <p class="sec-title">Your Skincare Routine</p>
+      <p class="sec-sub">
+        Simple, consistent, affordable. For melanin-rich skin that needs
+        hydration, glow, and dark spot correction.
+      </p>
 
-<!-- ════════════════════ SKIN TAB ════════════════════ -->
-<div id="tab-skin" class="section active">
-  <p class="sec-title">Your Skincare Routine</p>
-  <p class="sec-sub">Simple, consistent, affordable. For melanin-rich skin that needs hydration, glow, and dark spot correction.</p>
+      <div class="highlight highlight-gold">
+        <h3>The Golden Rule of Melanin Skin</h3>
+        <p>
+          Hydration + SPF every single day. Dark spots, dullness, and uneven
+          texture are almost always caused by dehydration and sun damage on dark
+          skin. Fix those two things first — everything else is bonus.
+        </p>
+      </div>
 
-  <div class="highlight highlight-gold">
-    <h3>The Golden Rule of Melanin Skin</h3>
-    <p>Hydration + SPF every single day. Dark spots, dullness, and uneven texture are almost always caused by dehydration and sun damage on dark skin. Fix those two things first — everything else is bonus.</p>
-  </div>
-
-  <!-- Morning -->
-  <div class="label">Morning Routine</div>
-  <div class="card">
-    <div class="step-list">
-      <div class="step">
-        <div class="step-num num-gold">1</div>
-        <div class="step-body">
-          <div class="step-name">Gentle Cleanser</div>
-          <div><span class="step-tag tag-am">AM</span></div>
-          <div class="step-note">Wash face with lukewarm water — not hot. Cleanses without stripping moisture.</div>
-          <div class="step-product">Try: Neutrogena Hydro Boost Cleanser or CeraVe Hydrating Cleanser</div>
+      <!-- Morning -->
+      <div class="label">Morning Routine</div>
+      <div class="card">
+        <div class="step-list">
+          <div class="step">
+            <div class="step-num num-gold">1</div>
+            <div class="step-body">
+              <div class="step-name">Gentle Cleanser</div>
+              <div><span class="step-tag tag-am">AM</span></div>
+              <div class="step-note">
+                Wash face with lukewarm water — not hot. Cleanses without
+                stripping moisture.
+              </div>
+              <div class="step-product">
+                Try: Neutrogena Hydro Boost Cleanser or CeraVe Hydrating
+                Cleanser
+              </div>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num num-gold">2</div>
+            <div class="step-body">
+              <div class="step-name">Vitamin C Serum</div>
+              <div><span class="step-tag tag-am">AM</span></div>
+              <div class="step-note">
+                Fades dark spots, brightens skin, boosts collagen. Apply 2–3
+                drops, press into skin. Let dry 1 min.
+              </div>
+              <div class="step-product">
+                Try: Garnier Vitamin C Serum or Drgina Vitamin C (affordable in
+                Nigeria)
+              </div>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num num-gold">3</div>
+            <div class="step-body">
+              <div class="step-name">Moisturiser</div>
+              <div><span class="step-tag tag-am">AM</span></div>
+              <div class="step-note">
+                Seal in the serum. Look for hyaluronic acid or glycerin in
+                ingredients.
+              </div>
+              <div class="step-product">
+                Try: Neutrogena Hydro Boost Gel or simple shea butter mixed with
+                a few drops of water
+              </div>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num num-gold">4</div>
+            <div class="step-body">
+              <div class="step-name">SPF 30–50 Sunscreen ☀️</div>
+              <div>
+                <span class="step-tag tag-am">AM — NON-NEGOTIABLE</span>
+              </div>
+              <div class="step-note">
+                The single most important step for dark skin. Sun exposure
+                worsens dark spots and causes premature ageing on melanin skin.
+                Wear it even indoors near windows.
+              </div>
+              <div class="step-product">
+                Try: Black Girl Sunscreen, Neutrogena Ultra Sheer SPF50, or La
+                Roche-Posay (Miniso/online)
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="step">
-        <div class="step-num num-gold">2</div>
-        <div class="step-body">
-          <div class="step-name">Vitamin C Serum</div>
-          <div><span class="step-tag tag-am">AM</span></div>
-          <div class="step-note">Fades dark spots, brightens skin, boosts collagen. Apply 2–3 drops, press into skin. Let dry 1 min.</div>
-          <div class="step-product">Try: Garnier Vitamin C Serum or Drgina Vitamin C (affordable in Nigeria)</div>
-        </div>
-      </div>
-      <div class="step">
-        <div class="step-num num-gold">3</div>
-        <div class="step-body">
-          <div class="step-name">Moisturiser</div>
-          <div><span class="step-tag tag-am">AM</span></div>
-          <div class="step-note">Seal in the serum. Look for hyaluronic acid or glycerin in ingredients.</div>
-          <div class="step-product">Try: Neutrogena Hydro Boost Gel or simple shea butter mixed with a few drops of water</div>
-        </div>
-      </div>
-      <div class="step">
-        <div class="step-num num-gold">4</div>
-        <div class="step-body">
-          <div class="step-name">SPF 30–50 Sunscreen ☀️</div>
-          <div><span class="step-tag tag-am">AM — NON-NEGOTIABLE</span></div>
-          <div class="step-note">The single most important step for dark skin. Sun exposure worsens dark spots and causes premature ageing on melanin skin. Wear it even indoors near windows.</div>
-          <div class="step-product">Try: Black Girl Sunscreen, Neutrogena Ultra Sheer SPF50, or La Roche-Posay (Miniso/online)</div>
-        </div>
-      </div>
-    </div>
-  </div>
 
-  <!-- Evening -->
-  <div class="label">Evening Routine</div>
-  <div class="card">
-    <div class="step-list">
-      <div class="step">
-        <div class="step-num num-sage">1</div>
-        <div class="step-body">
-          <div class="step-name">Double Cleanse (if wearing makeup)</div>
-          <div><span class="step-tag tag-pm">PM</span></div>
-          <div class="step-note">Micellar water first to remove makeup, then gentle cleanser. If no makeup — just cleanser.</div>
+      <!-- Evening -->
+      <div class="label">Evening Routine</div>
+      <div class="card">
+        <div class="step-list">
+          <div class="step">
+            <div class="step-num num-sage">1</div>
+            <div class="step-body">
+              <div class="step-name">Double Cleanse (if wearing makeup)</div>
+              <div><span class="step-tag tag-pm">PM</span></div>
+              <div class="step-note">
+                Micellar water first to remove makeup, then gentle cleanser. If
+                no makeup — just cleanser.
+              </div>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num num-sage">2</div>
+            <div class="step-body">
+              <div class="step-name">Niacinamide Serum</div>
+              <div><span class="step-tag tag-pm">PM</span></div>
+              <div class="step-note">
+                Targets dark spots, minimises pores, evens skin tone, controls
+                oil. This is your texture corrector.
+              </div>
+              <div class="step-product">
+                Try: The Ordinary Niacinamide 10% + Zinc (widely available in
+                Nigeria)
+              </div>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num num-sage">3</div>
+            <div class="step-body">
+              <div class="step-name">Heavy Night Moisturiser</div>
+              <div><span class="step-tag tag-pm">PM</span></div>
+              <div class="step-note">
+                Skin repairs itself overnight — give it rich hydration to work
+                with. This is when you get supple skin.
+              </div>
+              <div class="step-product">
+                Raw shea butter + 2 drops rosehip oil (affordable, natural,
+                incredibly effective for dark skin)
+              </div>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num num-sage">4</div>
+            <div class="step-body">
+              <div class="step-name">Lip Balm</div>
+              <div><span class="step-tag tag-pm">PM</span></div>
+              <div class="step-note">
+                Apply a thick layer before bed. Your lips heal overnight.
+                Vaseline works perfectly.
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="step">
-        <div class="step-num num-sage">2</div>
-        <div class="step-body">
-          <div class="step-name">Niacinamide Serum</div>
-          <div><span class="step-tag tag-pm">PM</span></div>
-          <div class="step-note">Targets dark spots, minimises pores, evens skin tone, controls oil. This is your texture corrector.</div>
-          <div class="step-product">Try: The Ordinary Niacinamide 10% + Zinc (widely available in Nigeria)</div>
-        </div>
-      </div>
-      <div class="step">
-        <div class="step-num num-sage">3</div>
-        <div class="step-body">
-          <div class="step-name">Heavy Night Moisturiser</div>
-          <div><span class="step-tag tag-pm">PM</span></div>
-          <div class="step-note">Skin repairs itself overnight — give it rich hydration to work with. This is when you get supple skin.</div>
-          <div class="step-product">Raw shea butter + 2 drops rosehip oil (affordable, natural, incredibly effective for dark skin)</div>
-        </div>
-      </div>
-      <div class="step">
-        <div class="step-num num-sage">4</div>
-        <div class="step-body">
-          <div class="step-name">Lip Balm</div>
-          <div><span class="step-tag tag-pm">PM</span></div>
-          <div class="step-note">Apply a thick layer before bed. Your lips heal overnight. Vaseline works perfectly.</div>
-        </div>
-      </div>
-    </div>
-  </div>
 
-  <!-- Weekly -->
-  <div class="label">Weekly Treatments</div>
-  <div class="card">
-    <div class="step-list">
-      <div class="step">
-        <div class="step-num num-rose">1</div>
-        <div class="step-body">
-          <div class="step-name">Exfoliate (1–2x per week)</div>
-          <div><span class="step-tag tag-weekly">Weekly</span></div>
-          <div class="step-note">Removes dead skin, allows serums to penetrate deeper. Use a gentle chemical exfoliant — NOT harsh scrubs.</div>
-          <div class="step-product">Try: The Ordinary AHA/BHA Peeling Solution or a simple sugar + honey scrub</div>
+      <!-- Weekly -->
+      <div class="label">Weekly Treatments</div>
+      <div class="card">
+        <div class="step-list">
+          <div class="step">
+            <div class="step-num num-rose">1</div>
+            <div class="step-body">
+              <div class="step-name">Exfoliate (1–2x per week)</div>
+              <div><span class="step-tag tag-weekly">Weekly</span></div>
+              <div class="step-note">
+                Removes dead skin, allows serums to penetrate deeper. Use a
+                gentle chemical exfoliant — NOT harsh scrubs.
+              </div>
+              <div class="step-product">
+                Try: The Ordinary AHA/BHA Peeling Solution or a simple sugar +
+                honey scrub
+              </div>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num num-rose">2</div>
+            <div class="step-body">
+              <div class="step-name">Face Mask (1x per week)</div>
+              <div><span class="step-tag tag-weekly">Weekly</span></div>
+              <div class="step-note">
+                Multani mitti (Fuller's Earth) + rose water mask is excellent
+                for dark skin — brightens and deep cleans.
+              </div>
+              <div class="step-product">
+                Affordable at any Nigerian pharmacy or market
+              </div>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num num-rose">3</div>
+            <div class="step-body">
+              <div class="step-name">Gua Sha or Face Massage</div>
+              <div><span class="step-tag tag-weekly">2–3x week</span></div>
+              <div class="step-note">
+                Reduces puffiness, lifts the face, improves circulation and that
+                natural glow. Do it while applying night moisturiser.
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="step">
-        <div class="step-num num-rose">2</div>
-        <div class="step-body">
-          <div class="step-name">Face Mask (1x per week)</div>
-          <div><span class="step-tag tag-weekly">Weekly</span></div>
-          <div class="step-note">Multani mitti (Fuller's Earth) + rose water mask is excellent for dark skin — brightens and deep cleans.</div>
-          <div class="step-product">Affordable at any Nigerian pharmacy or market</div>
+
+      <div class="tip">
+        <strong>For your lips specifically:</strong> Mix shea butter + a tiny
+        pinch of sugar, scrub gently once a week. Follow with vaseline every
+        night. Soft, full lips in 2 weeks.
+      </div>
+
+      <div class="tip">
+        <strong>Drink water first:</strong> Supple skin starts from inside. 2–3
+        litres a day. Your serum cannot hydrate dehydrated skin from within —
+        water does that.
+      </div>
+    </div>
+
+    <!-- ════════════════════ BODY TAB ════════════════════ -->
+    <div id="tab-body" class="section">
+      <p class="sec-title">Body Skin Care</p>
+      <p class="sec-sub">
+        Head to toe supple, even, glowing skin. Not just your face.
+      </p>
+
+      <div class="highlight highlight-rose">
+        <h3>Your Body Skin Goals</h3>
+        <p>
+          Even skin tone, soft texture, no ashy patches, no dark knees or
+          elbows, smooth legs, and an overall healthy glow from neck to feet.
+        </p>
+      </div>
+
+      <div class="label">Shower Routine</div>
+      <div class="card">
+        <div class="step-list">
+          <div class="step">
+            <div class="step-num num-gold">1</div>
+            <div class="step-body">
+              <div class="step-name">Use Lukewarm Water Only</div>
+              <div class="step-note">
+                Hot water strips natural oils from skin. Lukewarm water is the
+                minimum change that improves dryness and dullness immediately.
+              </div>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num num-gold">2</div>
+            <div class="step-body">
+              <div class="step-name">Body Scrub (2–3x per week)</div>
+              <div class="step-note">
+                Exfoliate in the shower to remove dead skin. This is what
+                creates that lit-from-within glow.
+              </div>
+              <div class="step-product">
+                DIY: Brown sugar + coconut oil + lemon juice. Or: St. Ives
+                Apricot Scrub
+              </div>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num num-gold">3</div>
+            <div class="step-body">
+              <div class="step-name">Moisturise IMMEDIATELY after shower</div>
+              <div class="step-note">
+                While skin is still slightly damp — this locks in moisture.
+                Don't wait until you're fully dry. This one habit changes
+                everything.
+              </div>
+              <div class="step-product">
+                Shea butter + a few drops of body oil (coconut, almond, or
+                jojoba)
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="step">
-        <div class="step-num num-rose">3</div>
-        <div class="step-body">
-          <div class="step-name">Gua Sha or Face Massage</div>
-          <div><span class="step-tag tag-weekly">2–3x week</span></div>
-          <div class="step-note">Reduces puffiness, lifts the face, improves circulation and that natural glow. Do it while applying night moisturiser.</div>
+
+      <div class="label">Problem Areas</div>
+      <div class="two-col">
+        <div class="mini-card">
+          <div class="mini-icon">🦵</div>
+          <div class="mini-title">Dark Knees & Elbows</div>
+          <div class="mini-note">
+            Apply lemon juice + shea butter nightly. Exfoliate 2x/week. Results
+            in 3–4 weeks.
+          </div>
+        </div>
+        <div class="mini-card">
+          <div class="mini-icon">✨</div>
+          <div class="mini-title">Ashy Skin</div>
+          <div class="mini-note">
+            Moisturise within 2 mins of shower every single day. No exceptions.
+          </div>
+        </div>
+        <div class="mini-card">
+          <div class="mini-icon">🍑</div>
+          <div class="mini-title">Inner Thighs / Dark Spots</div>
+          <div class="mini-note">
+            Niacinamide body lotion + loose clothing. Reduce friction. Takes 6–8
+            weeks.
+          </div>
+        </div>
+        <div class="mini-card">
+          <div class="mini-icon">👣</div>
+          <div class="mini-title">Feet & Heels</div>
+          <div class="mini-note">
+            Soak weekly, pumice stone, then thick vaseline + socks overnight.
+            Soft feet in 2 weeks.
+          </div>
+        </div>
+      </div>
+
+      <div class="label">Weekly Body Ritual</div>
+      <div class="card">
+        <div class="step-list">
+          <div class="step">
+            <div class="step-num num-rose">1</div>
+            <div class="step-body">
+              <div class="step-name">Full Body Scrub Sesh</div>
+              <div class="step-note">
+                Once a week — scrub from neck to feet in the shower. Focus on
+                knees, elbows, ankles, and back of arms.
+              </div>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num num-rose">2</div>
+            <div class="step-body">
+              <div class="step-name">Foot Soak + Care</div>
+              <div class="step-note">
+                Warm water + salt + lemon for 15 min. Scrub with pumice. Pat
+                dry. Apply thick shea or vaseline + wear socks to bed.
+              </div>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num num-rose">3</div>
+            <div class="step-body">
+              <div class="step-name">Body Oil Treatment</div>
+              <div class="step-note">
+                Massage body oil all over after scrubbing — especially on
+                stretch marks, dry patches, and dark areas. Rosehip oil for dark
+                spots.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tip">
+        <strong>The #1 body skin rule:</strong> Moisturise damp skin every
+        single day. This alone — done consistently — will give you supple,
+        glowing skin within 3–4 weeks. Everything else is extra.
+      </div>
+    </div>
+
+    <!-- ════════════════════ HAIR TAB ════════════════════ -->
+    <div id="tab-hair" class="section">
+      <p class="sec-title">Hair Care</p>
+      <p class="sec-sub">
+        Healthy, moisturised natural hair + neat edges = 50% of looking put
+        together done already.
+      </p>
+
+      <div class="highlight highlight-sage">
+        <h3>Your Hair Priorities</h3>
+        <p>
+          From the photo — your edges need moisture and consistent care, and
+          your natural hair needs a hydration routine. The goal is healthy,
+          defined, and always neat — not necessarily long or elaborate.
+        </p>
+      </div>
+
+      <div class="label">The LOC Method (For Natural Hair)</div>
+      <div class="card">
+        <div class="step-list">
+          <div class="step">
+            <div class="step-num num-sage">L</div>
+            <div class="step-body">
+              <div class="step-name">
+                Liquid — Water or leave-in conditioner
+              </div>
+              <div class="step-note">
+                Always moisturise natural hair with water first. Spray bottle
+                with water is your best friend.
+              </div>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num num-sage">O</div>
+            <div class="step-body">
+              <div class="step-name">Oil — Seal the moisture in</div>
+              <div class="step-note">
+                Apply a light oil over the water — coconut, jojoba, or castor
+                oil. Seals moisture so it doesn't evaporate.
+              </div>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num num-sage">C</div>
+            <div class="step-body">
+              <div class="step-name">Cream — Shea butter or hair cream</div>
+              <div class="step-note">
+                Apply a thick cream or butter last to lock everything in. This
+                keeps your hair moisturised for days.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="label">Edge Care Routine</div>
+      <div class="card">
+        <div class="step-list">
+          <div class="step">
+            <div class="step-num num-gold">1</div>
+            <div class="step-body">
+              <div class="step-name">Apply castor oil to edges nightly</div>
+              <div class="step-note">
+                Jamaican Black Castor Oil (JBCO) is the gold standard for edge
+                growth and thickness. Massage in gently — don't rub
+                aggressively.
+              </div>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num num-gold">2</div>
+            <div class="step-body">
+              <div class="step-name">
+                Lay edges with a soft brush + edge control
+              </div>
+              <div class="step-note">
+                Use a soft toothbrush or edge brush. Don't use hard gels that
+                cause breakage. Less tension = more growth.
+              </div>
+              <div class="step-product">
+                Try: Eco Styler Gel (olive oil) or Got2b Ultra Glued lightly
+              </div>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num num-gold">3</div>
+            <div class="step-body">
+              <div class="step-name">Satin scarf/bonnet at night</div>
+              <div class="step-note">
+                Non-negotiable. Cotton pillowcases absorb moisture and break
+                edges. Satin or silk only.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="label">Weekly Wash Day</div>
+      <div class="card">
+        <div class="step-list">
+          <div class="step">
+            <div class="step-num num-rose">1</div>
+            <div class="step-body">
+              <div class="step-name">Pre-poo (optional but powerful)</div>
+              <div class="step-note">
+                Apply coconut or olive oil to hair 30 min before washing.
+                Prevents protein loss during shampoo.
+              </div>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num num-rose">2</div>
+            <div class="step-body">
+              <div class="step-name">Shampoo — Sulphate Free</div>
+              <div class="step-note">
+                Regular shampoo strips natural hair. Use sulphate-free only.
+              </div>
+              <div class="step-product">
+                Try: SheaMoisture or As I Am shampoo
+              </div>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num num-rose">3</div>
+            <div class="step-body">
+              <div class="step-name">Deep Condition — 20–30 min</div>
+              <div class="step-note">
+                This is the most important wash day step. Apply deep
+                conditioner, cover with a plastic cap, leave for 20–30 min.
+                Transforms dry hair.
+              </div>
+              <div class="step-product">
+                Try: ORS Olive Oil Replenishing Pack or Shea Moisture Manuka
+                Honey Masque
+              </div>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num num-rose">4</div>
+            <div class="step-body">
+              <div class="step-name">Style with LOC Method</div>
+              <div class="step-note">
+                After washing, apply leave-in → oil → cream while hair is still
+                wet. Then style as desired.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tip">
+        <strong>Neat = put together:</strong> A simple stretched bun, low puff,
+        or braided style that's fresh and moisturised will always look more
+        polished than elaborate styling on dry, neglected hair.
+      </div>
+    </div>
+
+    <!-- ════════════════════ STYLE TAB ════════════════════ -->
+    <div id="tab-style" class="section">
+      <p class="sec-title">Looking Put Together</p>
+      <p class="sec-sub">
+        Always neat, always intentional. This isn't about expensive clothes —
+        it's about fit, colour, and grooming.
+      </p>
+
+      <div class="highlight highlight-gold">
+        <h3>"Put Together" is 80% Grooming, 20% Clothes</h3>
+        <p>
+          Clean skin, fresh hair, ironed clothes, and a confident posture will
+          make a ₦3,000 outfit look like ₦30,000. Start there before buying
+          anything new.
+        </p>
+      </div>
+
+      <div class="label">Your Signature Style Formula</div>
+      <div class="card">
+        <div class="step-list">
+          <div class="step">
+            <div class="step-num num-gold">1</div>
+            <div class="step-body">
+              <div class="step-name">Fit Over Fashion</div>
+              <div class="step-note">
+                Clothes that fit your body perfectly always look expensive. One
+                well-fitting piece beats 5 ill-fitting ones. Tailor what you
+                have if needed — a seamstress is cheap in Nigeria.
+              </div>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num num-gold">2</div>
+            <div class="step-body">
+              <div class="step-name">Build a Neutral Base</div>
+              <div class="step-note">
+                Invest in: white tees, black trousers, nude/beige pieces, a
+                good-fitting jeans, and one blazer. Everything else is accent.
+              </div>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num num-gold">3</div>
+            <div class="step-body">
+              <div class="step-name">Add Your Colour Accent</div>
+              <div class="step-note">
+                As a dark-skinned woman, you look incredible in: earth tones
+                (rust, terracotta, burnt orange), deep jewel tones (emerald,
+                burgundy, cobalt), and bright whites and creams. Lean into
+                these.
+              </div>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num num-gold">4</div>
+            <div class="step-body">
+              <div class="step-name">One Statement Piece Per Outfit</div>
+              <div class="step-note">
+                Statement earrings, a bold bag, or a standout top — then keep
+                everything else simple. Trying to do too much at once looks
+                cluttered, not stylish.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="label">Outfit Formulas by Occasion</div>
+      <div class="card">
+        <div class="outfit-row">
+          <div class="outfit-occ">🏢 Office / Work Days</div>
+          <div class="outfit-name">
+            Well-fitted trousers + tucked blouse + flat mules or block heels
+          </div>
+          <div class="outfit-note">
+            Keep it clean and structured. One piece of jewellery. Hair neat and
+            moisturised. SPF on the face.
+          </div>
+        </div>
+        <div class="outfit-row">
+          <div class="outfit-occ">🏠 Casual / Home / Errands</div>
+          <div class="outfit-name">
+            Good-fitting jeans + simple tee or bodysuit + clean sneakers
+          </div>
+          <div class="outfit-note">
+            Even casual should look intentional. Iron your tee. Moisturise your
+            skin. Do your edges.
+          </div>
+        </div>
+        <div class="outfit-row">
+          <div class="outfit-occ">🌙 Evening / Going Out</div>
+          <div class="outfit-name">
+            Midi dress or co-ord set in a rich tone + heels + minimal jewellery
+          </div>
+          <div class="outfit-note">
+            You don't need to show a lot of skin to look stunning. Coverage with
+            elegance reads wealth.
+          </div>
+        </div>
+        <div class="outfit-row">
+          <div class="outfit-occ">🙏 Sunday / Events</div>
+          <div class="outfit-name">
+            Ankara or monochrome set + statement earrings + heels
+          </div>
+          <div class="outfit-note">
+            Lean into your culture. Ankara on a well-fitted silhouette is always
+            elite.
+          </div>
+        </div>
+      </div>
+
+      <div class="label">Non-Negotiable Grooming Habits</div>
+      <div class="two-col">
+        <div class="mini-card">
+          <div class="mini-icon">💅</div>
+          <div class="mini-title">Nails</div>
+          <div class="mini-note">
+            Clean, shaped nails always. Even bare nails — keep them filed and
+            moisturise your cuticles.
+          </div>
+        </div>
+        <div class="mini-card">
+          <div class="mini-icon">👄</div>
+          <div class="mini-title">Lips</div>
+          <div class="mini-note">
+            Moisturised lips, always. A simple tinted lip balm elevates your
+            whole face.
+          </div>
+        </div>
+        <div class="mini-card">
+          <div class="mini-icon">🦷</div>
+          <div class="mini-title">Teeth</div>
+          <div class="mini-note">
+            Brush twice daily. Use charcoal or whitening toothpaste once a week.
+            A bright smile is magnetic.
+          </div>
+        </div>
+        <div class="mini-card">
+          <div class="mini-icon">👃</div>
+          <div class="mini-title">Fragrance</div>
+          <div class="mini-note">
+            A signature scent makes you unforgettable. Apply to pulse points —
+            wrists, neck, behind knees.
+          </div>
+        </div>
+      </div>
+
+      <div class="tip">
+        <strong>Colours that make dark skin glow:</strong> Rust, terracotta,
+        cobalt blue, emerald green, mustard yellow, burgundy, bright white, and
+        champagne gold. These are your power colours.
+      </div>
+    </div>
+
+    <!-- ════════════════════ FEET TAB ════════════════════ -->
+    <div id="tab-feet" class="section">
+      <p class="sec-title">Feet Care Routine</p>
+      <p class="sec-sub">
+        Polished from head to toe. Soft, smooth, healthy feet complete your
+        glow-up and make you feel confident.
+      </p>
+
+      <div class="highlight highlight-sage">
+        <h3>Your Feet Goals</h3>
+        <p>
+          Soft, smooth heels with no cracks or ashy patches. Trimmed nails with
+          healthy cuticles. Feet that feel and look polished — because a woman
+          who is glowing takes care of every inch of her body.
+        </p>
+      </div>
+
+      <div class="label">Daily Feet Care</div>
+      <div class="card">
+        <div class="step-list">
+          <div class="step">
+            <div class="step-num num-gold">1</div>
+            <div class="step-body">
+              <div class="step-name">
+                Moisturise Feet Immediately After Shower
+              </div>
+              <div class="step-note">
+                While skin is still slightly damp, apply thick moisturiser to
+                feet, paying special attention to heels and the sides of your
+                toes. Don't skip this — it prevents cracks and keeps skin soft.
+              </div>
+              <div class="step-product">
+                Shea butter + a drop of coconut oil, or Vaseline
+              </div>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num num-gold">2</div>
+            <div class="step-body">
+              <div class="step-name">Evening Feet Treatment</div>
+              <div class="step-note">
+                Before bed, apply a thick layer of moisturiser (or vaseline) to
+                feet, put on soft socks, and sleep. Your feet repair and soften
+                overnight. Do this 3–4 times a week minimum.
+              </div>
+              <div class="step-product">Vaseline + cotton socks</div>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num num-gold">3</div>
+            <div class="step-body">
+              <div class="step-name">Keep Toe Nails Trimmed & Shaped</div>
+              <div class="step-note">
+                Trim every 3–4 weeks. Use nail clippers, not scissors. File into
+                a rounded or slightly squared shape. Keep edges smooth to
+                prevent breakage.
+              </div>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num num-gold">4</div>
+            <div class="step-body">
+              <div class="step-name">Moisturise Cuticles</div>
+              <div class="step-note">
+                Push back cuticles gently with a cuticle pusher 2x per week.
+                Apply cuticle oil or a small amount of castor oil. Healthy nails
+                start with healthy cuticles.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="label">Weekly Deep Feet Soak</div>
+      <div class="card">
+        <div class="step-list">
+          <div class="step">
+            <div class="step-num num-rose">1</div>
+            <div class="step-body">
+              <div class="step-name">Soak in Warm Water (15–20 min)</div>
+              <div class="step-note">
+                Warm water + Epsom salt (or sea salt) + a squeeze of lemon
+                juice. This softens dead skin, relaxes tired feet, and prepares
+                them for exfoliation. Soak every Sunday or as needed.
+              </div>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num num-rose">2</div>
+            <div class="step-body">
+              <div class="step-name">Exfoliate with Pumice Stone</div>
+              <div class="step-note">
+                After soaking, gently rub heels and any rough patches with a
+                pumice stone. Use light pressure — don't be aggressive. Focus on
+                heels first, then balls of feet and sides.
+              </div>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num num-rose">3</div>
+            <div class="step-body">
+              <div class="step-name">Scrub with a Foot Scrub (Optional)</div>
+              <div class="step-note">
+                Use a gentle foot scrub or DIY: ground oatmeal + honey + a few
+                drops of lemon juice. Scrub gently in circular motions. This
+                removes dead skin and leaves feet smooth.
+              </div>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num num-rose">4</div>
+            <div class="step-body">
+              <div class="step-name">Rinse & Pat Dry Completely</div>
+              <div class="step-note">
+                Always dry feet thoroughly, especially between the toes.
+                Moisture left behind causes fungal infections and odour.
+              </div>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num num-rose">5</div>
+            <div class="step-body">
+              <div class="step-name">Deep Moisturise + Wear Socks</div>
+              <div class="step-note">
+                Apply thick shea butter or vaseline to entire foot (including
+                between toes and cuticles). Put on soft cotton socks and leave
+                on for 30 min to 2 hours, or overnight for best results.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="label">Problem Areas Fix</div>
+      <div class="two-col">
+        <div class="mini-card">
+          <div class="mini-icon">🩹</div>
+          <div class="mini-title">Cracked Heels</div>
+          <div class="mini-note">
+            Exfoliate + moisturise nightly with vaseline + socks. In 2–3 weeks,
+            even severe cracks heal. Consistency is key.
+          </div>
+        </div>
+        <div class="mini-card">
+          <div class="mini-icon">⚪</div>
+          <div class="mini-title">Ashy Feet</div>
+          <div class="mini-note">
+            Exfoliate weekly and moisturise immediately after shower, while skin
+            is damp. Darkness often comes from dryness — fix that first.
+          </div>
+        </div>
+        <div class="mini-card">
+          <div class="mini-icon">🔴</div>
+          <div class="mini-title">Dark/Discoloured Skin</div>
+          <div class="mini-note">
+            Apply lemon juice mixed with shea butter nightly. Lemon is a natural
+            lightener. Results in 4–6 weeks with consistency.
+          </div>
+        </div>
+        <div class="mini-card">
+          <div class="mini-icon">🧅</div>
+          <div class="mini-title">Calluses</div>
+          <div class="mini-note">
+            Soak, pumice, then moisturise. If too thick, see a pedicurist. Never
+            cut calluses yourself — you risk injury and infection.
+          </div>
+        </div>
+      </div>
+
+      <div class="label">Monthly Pedicure (At Home or Salon)</div>
+      <div class="card">
+        <div class="step-list">
+          <div class="step">
+            <div class="step-num num-sage">1</div>
+            <div class="step-body">
+              <div class="step-name">Full Soak & Deep Exfoliation</div>
+              <div class="step-note">
+                A thorough soak followed by pumice or a professional foot file.
+                This resets your feet and keeps them in top condition.
+              </div>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num num-sage">2</div>
+            <div class="step-body">
+              <div class="step-name">Nail Care & Shaping</div>
+              <div class="step-note">
+                Trim, file, and shape nails. Basic maintenance keeps them
+                looking intentional and polished.
+              </div>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num num-sage">3</div>
+            <div class="step-body">
+              <div class="step-name">Polish or Keep Natural</div>
+              <div class="step-note">
+                Up to you — a simple neutral polish or bare, healthy nails
+                always look polished. If using polish, use a good base coat to
+                prevent staining.
+              </div>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num num-sage">4</div>
+            <div class="step-body">
+              <div class="step-name">Moisturise & Massage</div>
+              <div class="step-note">
+                Finish with a rich moisturiser and give yourself a 5-minute foot
+                massage. Reflexology improves circulation and helps you feel
+                energised.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tip">
+        <strong>Soft feet in 2 weeks guaranteed:</strong> Exfoliate weekly,
+        moisturise immediately after shower on damp skin, and apply vaseline +
+        socks every other night before bed. That's it. This combination is
+        non-negotiable for polished feet.
+      </div>
+
+      <div class="tip">
+        <strong>Prevent foot odour & fungus:</strong> Always dry feet completely
+        after bathing (especially between toes), change socks if they get damp,
+        and wear breathable footwear when possible. Keep feet dry and they'll
+        stay healthy.
+      </div>
+    </div>
+
+    <!-- ════════════════════ RITUALS TAB ════════════════════ -->
+    <div id="tab-rituals" class="section">
+      <p class="sec-title">Your Daily Rituals</p>
+      <p class="sec-sub">
+        What you do consistently every day compounds into the woman you become.
+        These rituals are non-negotiable.
+      </p>
+
+      <div class="label">Morning Ritual</div>
+      <div class="card">
+        <div class="ritual-row">
+          <div class="ritual-time">5–6am</div>
+          <div class="ritual-body">
+            <div class="ritual-name">Warm water + lemon</div>
+            <div class="ritual-note">
+              First thing before anything else. Gut health, skin glow,
+              digestion.
+            </div>
+          </div>
+        </div>
+        <div class="ritual-row">
+          <div class="ritual-time">Morning</div>
+          <div class="ritual-body">
+            <div class="ritual-name">Morning skincare routine</div>
+            <div class="ritual-note">
+              Cleanser → Vitamin C → Moisturiser → SPF. 5–7 minutes.
+              Non-negotiable.
+            </div>
+          </div>
+        </div>
+        <div class="ritual-row">
+          <div class="ritual-time">Morning</div>
+          <div class="ritual-body">
+            <div class="ritual-name">Protein breakfast</div>
+            <div class="ritual-note">
+              Eggs + water. Fuels your skin, muscles, and focus. No cookies.
+            </div>
+          </div>
+        </div>
+        <div class="ritual-row">
+          <div class="ritual-time">Morning</div>
+          <div class="ritual-body">
+            <div class="ritual-name">Dress with intention</div>
+            <div class="ritual-note">
+              Even at home — dress like someone you respect. It changes how you
+              move through the day.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="label">Evening Ritual</div>
+      <div class="card">
+        <div class="ritual-row">
+          <div class="ritual-time">7–8pm</div>
+          <div class="ritual-body">
+            <div class="ritual-name">Last meal — light and early</div>
+            <div class="ritual-note">
+              No heavy carbs. Protein + vegetables. Your gut and your waistline
+              both benefit.
+            </div>
+          </div>
+        </div>
+        <div class="ritual-row">
+          <div class="ritual-time">Evening</div>
+          <div class="ritual-body">
+            <div class="ritual-name">Evening skincare + body care</div>
+            <div class="ritual-note">
+              Cleanse → Niacinamide → Shea butter. Body lotion on damp skin.
+              Vaseline on lips.
+            </div>
+          </div>
+        </div>
+        <div class="ritual-row">
+          <div class="ritual-time">Evening</div>
+          <div class="ritual-body">
+            <div class="ritual-name">Castor oil on edges + satin bonnet</div>
+            <div class="ritual-note">
+              Every night. No exceptions. Your edges will transform in 4–6
+              weeks.
+            </div>
+          </div>
+        </div>
+        <div class="ritual-row">
+          <div class="ritual-time">10–11pm</div>
+          <div class="ritual-body">
+            <div class="ritual-name">7–8 hours of sleep</div>
+            <div class="ritual-note">
+              Sleep is when your skin repairs, your muscles grow, your gut
+              heals, and your cortisol resets. It is the most underrated beauty
+              tool.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="label">Weekly Rituals</div>
+      <div class="card">
+        <div class="ritual-row">
+          <div class="ritual-time">Sunday</div>
+          <div class="ritual-body">
+            <div class="ritual-name">Full body scrub + wash day</div>
+            <div class="ritual-note">
+              Dedicate 1–2 hours to yourself. Scrub, deep condition hair, do a
+              face mask, paint your nails, rest.
+            </div>
+          </div>
+        </div>
+        <div class="ritual-row">
+          <div class="ritual-time">Weekly</div>
+          <div class="ritual-body">
+            <div class="ritual-name">Plan your outfits for the week</div>
+            <div class="ritual-note">
+              10 minutes on Sunday. Know what you're wearing before the week
+              starts. It removes stress and keeps you consistently put together.
+            </div>
+          </div>
+        </div>
+        <div class="ritual-row">
+          <div class="ritual-time">Weekly</div>
+          <div class="ritual-body">
+            <div class="ritual-name">Foot care</div>
+            <div class="ritual-note">
+              Soak, scrub, vaseline + socks to bed. Soft feet = polished finish
+              head to toe.
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <div class="tip">
-    <strong>For your lips specifically:</strong> Mix shea butter + a tiny pinch of sugar, scrub gently once a week. Follow with vaseline every night. Soft, full lips in 2 weeks.
-  </div>
+    <!-- ════════════════════ MINDSET TAB ════════════════════ -->
+    <div id="tab-mindset" class="section">
+      <p class="sec-title">The Inner Glow Up</p>
+      <p class="sec-sub">
+        Wealth, good luck, and attracting goodwill aren't random. They follow
+        the woman you decide to become.
+      </p>
 
-  <div class="tip">
-    <strong>Drink water first:</strong> Supple skin starts from inside. 2–3 litres a day. Your serum cannot hydrate dehydrated skin from within — water does that.
-  </div>
-</div>
+      <div class="highlight highlight-gold">
+        <h3>"Luck is what happens when preparation meets opportunity."</h3>
+        <p>
+          The skincare, the fitness, the healthy eating, the style — none of it
+          is vanity. It's all discipline. And discipline is the single most
+          attractive and wealth-generating trait a person can have. You're
+          already building it.
+        </p>
+      </div>
 
-<!-- ════════════════════ BODY TAB ════════════════════ -->
-<div id="tab-body" class="section">
-  <p class="sec-title">Body Skin Care</p>
-  <p class="sec-sub">Head to toe supple, even, glowing skin. Not just your face.</p>
-
-  <div class="highlight highlight-rose">
-    <h3>Your Body Skin Goals</h3>
-    <p>Even skin tone, soft texture, no ashy patches, no dark knees or elbows, smooth legs, and an overall healthy glow from neck to feet.</p>
-  </div>
-
-  <div class="label">Shower Routine</div>
-  <div class="card">
-    <div class="step-list">
-      <div class="step">
-        <div class="step-num num-gold">1</div>
-        <div class="step-body">
-          <div class="step-name">Use Lukewarm Water Only</div>
-          <div class="step-note">Hot water strips natural oils from skin. Lukewarm water is the minimum change that improves dryness and dullness immediately.</div>
+      <div class="label">Habits That Attract Goodwill & Wealth</div>
+      <div class="card">
+        <div class="step-list">
+          <div class="step">
+            <div class="step-num num-gold">1</div>
+            <div class="step-body">
+              <div class="step-name">Show Up Consistently</div>
+              <div class="step-note">
+                In your work, your health, your relationships — people who show
+                up consistently get trusted, promoted, and referred. Consistency
+                is currency.
+              </div>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num num-gold">2</div>
+            <div class="step-body">
+              <div class="step-name">Take Up Space Confidently</div>
+              <div class="step-note">
+                Speak clearly, stand tall, make eye contact. Confidence is not
+                arrogance — it's knowing your worth and not shrinking. People
+                give opportunities to people who seem like they're going
+                somewhere.
+              </div>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num num-gold">3</div>
+            <div class="step-body">
+              <div class="step-name">Be Generous with Your Energy</div>
+              <div class="step-note">
+                Goodwill flows to people who give it. Show up for others, be
+                genuinely kind, celebrate people around you. What you put out
+                returns — often multiplied.
+              </div>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num num-gold">4</div>
+            <div class="step-body">
+              <div class="step-name">Invest in Yourself First</div>
+              <div class="step-note">
+                Your skills, your body, your mind, your appearance — investing
+                in yourself is the highest-ROI investment available to you.
+                Everything else follows.
+              </div>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num num-gold">5</div>
+            <div class="step-body">
+              <div class="step-name">Build a Second Income Stream</div>
+              <div class="step-note">
+                Wealth rarely comes from one source. With your skills as a
+                developer, freelancing, content creation, or a side project can
+                begin generating foreign currency income — which you're already
+                working toward.
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="step">
-        <div class="step-num num-gold">2</div>
-        <div class="step-body">
-          <div class="step-name">Body Scrub (2–3x per week)</div>
-          <div class="step-note">Exfoliate in the shower to remove dead skin. This is what creates that lit-from-within glow.</div>
-          <div class="step-product">DIY: Brown sugar + coconut oil + lemon juice. Or: St. Ives Apricot Scrub</div>
+
+      <div class="label">Your Timeline to a New You</div>
+      <div class="card">
+        <div class="outfit-row">
+          <div class="outfit-occ">Week 1–2</div>
+          <div class="outfit-name">Routines feel new and awkward</div>
+          <div class="outfit-note">
+            Push through. This is the hardest part. Your skin will already start
+            feeling better.
+          </div>
+        </div>
+        <div class="outfit-row">
+          <div class="outfit-occ">Week 3–4</div>
+          <div class="outfit-name">Skin noticeably more hydrated and even</div>
+          <div class="outfit-note">
+            Edges filling in. You'll catch yourself looking in the mirror
+            differently.
+          </div>
+        </div>
+        <div class="outfit-row">
+          <div class="outfit-occ">Month 2</div>
+          <div class="outfit-name">Others will start noticing</div>
+          <div class="outfit-note">
+            Body changing, skin glowing, always put together. People will ask
+            what you're doing.
+          </div>
+        </div>
+        <div class="outfit-row">
+          <div class="outfit-occ">Month 3+</div>
+          <div class="outfit-name">This becomes who you are</div>
+          <div class="outfit-note">
+            Not something you do — someone you are. That's when the real
+            opportunities start showing up.
+          </div>
         </div>
       </div>
-      <div class="step">
-        <div class="step-num num-gold">3</div>
-        <div class="step-body">
-          <div class="step-name">Moisturise IMMEDIATELY after shower</div>
-          <div class="step-note">While skin is still slightly damp — this locks in moisture. Don't wait until you're fully dry. This one habit changes everything.</div>
-          <div class="step-product">Shea butter + a few drops of body oil (coconut, almond, or jojoba)</div>
-        </div>
-      </div>
-    </div>
-  </div>
 
-  <div class="label">Problem Areas</div>
-  <div class="two-col">
-    <div class="mini-card">
-      <div class="mini-icon">🦵</div>
-      <div class="mini-title">Dark Knees & Elbows</div>
-      <div class="mini-note">Apply lemon juice + shea butter nightly. Exfoliate 2x/week. Results in 3–4 weeks.</div>
+      <div class="tip">
+        <strong>The secret:</strong> You don't attract what you want. You
+        attract what you are. Become the woman who is already wealthy,
+        disciplined, healthy, and radiant — and everything you want will find
+        its way to you.
+      </div>
     </div>
-    <div class="mini-card">
-      <div class="mini-icon">✨</div>
-      <div class="mini-title">Ashy Skin</div>
-      <div class="mini-note">Moisturise within 2 mins of shower every single day. No exceptions.</div>
-    </div>
-    <div class="mini-card">
-      <div class="mini-icon">🍑</div>
-      <div class="mini-title">Inner Thighs / Dark Spots</div>
-      <div class="mini-note">Niacinamide body lotion + loose clothing. Reduce friction. Takes 6–8 weeks.</div>
-    </div>
-    <div class="mini-card">
-      <div class="mini-icon">👣</div>
-      <div class="mini-title">Feet & Heels</div>
-      <div class="mini-note">Soak weekly, pumice stone, then thick vaseline + socks overnight. Soft feet in 2 weeks.</div>
-    </div>
-  </div>
 
-  <div class="label">Weekly Body Ritual</div>
-  <div class="card">
-    <div class="step-list">
-      <div class="step">
-        <div class="step-num num-rose">1</div>
-        <div class="step-body">
-          <div class="step-name">Full Body Scrub Sesh</div>
-          <div class="step-note">Once a week — scrub from neck to feet in the shower. Focus on knees, elbows, ankles, and back of arms.</div>
-        </div>
-      </div>
-      <div class="step">
-        <div class="step-num num-rose">2</div>
-        <div class="step-body">
-          <div class="step-name">Foot Soak + Care</div>
-          <div class="step-note">Warm water + salt + lemon for 15 min. Scrub with pumice. Pat dry. Apply thick shea or vaseline + wear socks to bed.</div>
-        </div>
-      </div>
-      <div class="step">
-        <div class="step-num num-rose">3</div>
-        <div class="step-body">
-          <div class="step-name">Body Oil Treatment</div>
-          <div class="step-note">Massage body oil all over after scrubbing — especially on stretch marks, dry patches, and dark areas. Rosehip oil for dark spots.</div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="tip">
-    <strong>The #1 body skin rule:</strong> Moisturise damp skin every single day. This alone — done consistently — will give you supple, glowing skin within 3–4 weeks. Everything else is extra.
-  </div>
-</div>
-
-<!-- ════════════════════ HAIR TAB ════════════════════ -->
-<div id="tab-hair" class="section">
-  <p class="sec-title">Hair Care</p>
-  <p class="sec-sub">Healthy, moisturised natural hair + neat edges = 50% of looking put together done already.</p>
-
-  <div class="highlight highlight-sage">
-    <h3>Your Hair Priorities</h3>
-    <p>From the photo — your edges need moisture and consistent care, and your natural hair needs a hydration routine. The goal is healthy, defined, and always neat — not necessarily long or elaborate.</p>
-  </div>
-
-  <div class="label">The LOC Method (For Natural Hair)</div>
-  <div class="card">
-    <div class="step-list">
-      <div class="step">
-        <div class="step-num num-sage">L</div>
-        <div class="step-body">
-          <div class="step-name">Liquid — Water or leave-in conditioner</div>
-          <div class="step-note">Always moisturise natural hair with water first. Spray bottle with water is your best friend.</div>
-        </div>
-      </div>
-      <div class="step">
-        <div class="step-num num-sage">O</div>
-        <div class="step-body">
-          <div class="step-name">Oil — Seal the moisture in</div>
-          <div class="step-note">Apply a light oil over the water — coconut, jojoba, or castor oil. Seals moisture so it doesn't evaporate.</div>
-        </div>
-      </div>
-      <div class="step">
-        <div class="step-num num-sage">C</div>
-        <div class="step-body">
-          <div class="step-name">Cream — Shea butter or hair cream</div>
-          <div class="step-note">Apply a thick cream or butter last to lock everything in. This keeps your hair moisturised for days.</div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="label">Edge Care Routine</div>
-  <div class="card">
-    <div class="step-list">
-      <div class="step">
-        <div class="step-num num-gold">1</div>
-        <div class="step-body">
-          <div class="step-name">Apply castor oil to edges nightly</div>
-          <div class="step-note">Jamaican Black Castor Oil (JBCO) is the gold standard for edge growth and thickness. Massage in gently — don't rub aggressively.</div>
-        </div>
-      </div>
-      <div class="step">
-        <div class="step-num num-gold">2</div>
-        <div class="step-body">
-          <div class="step-name">Lay edges with a soft brush + edge control</div>
-          <div class="step-note">Use a soft toothbrush or edge brush. Don't use hard gels that cause breakage. Less tension = more growth.</div>
-          <div class="step-product">Try: Eco Styler Gel (olive oil) or Got2b Ultra Glued lightly</div>
-        </div>
-      </div>
-      <div class="step">
-        <div class="step-num num-gold">3</div>
-        <div class="step-body">
-          <div class="step-name">Satin scarf/bonnet at night</div>
-          <div class="step-note">Non-negotiable. Cotton pillowcases absorb moisture and break edges. Satin or silk only.</div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="label">Weekly Wash Day</div>
-  <div class="card">
-    <div class="step-list">
-      <div class="step">
-        <div class="step-num num-rose">1</div>
-        <div class="step-body">
-          <div class="step-name">Pre-poo (optional but powerful)</div>
-          <div class="step-note">Apply coconut or olive oil to hair 30 min before washing. Prevents protein loss during shampoo.</div>
-        </div>
-      </div>
-      <div class="step">
-        <div class="step-num num-rose">2</div>
-        <div class="step-body">
-          <div class="step-name">Shampoo — Sulphate Free</div>
-          <div class="step-note">Regular shampoo strips natural hair. Use sulphate-free only.</div>
-          <div class="step-product">Try: SheaMoisture or As I Am shampoo</div>
-        </div>
-      </div>
-      <div class="step">
-        <div class="step-num num-rose">3</div>
-        <div class="step-body">
-          <div class="step-name">Deep Condition — 20–30 min</div>
-          <div class="step-note">This is the most important wash day step. Apply deep conditioner, cover with a plastic cap, leave for 20–30 min. Transforms dry hair.</div>
-          <div class="step-product">Try: ORS Olive Oil Replenishing Pack or Shea Moisture Manuka Honey Masque</div>
-        </div>
-      </div>
-      <div class="step">
-        <div class="step-num num-rose">4</div>
-        <div class="step-body">
-          <div class="step-name">Style with LOC Method</div>
-          <div class="step-note">After washing, apply leave-in → oil → cream while hair is still wet. Then style as desired.</div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="tip">
-    <strong>Neat = put together:</strong> A simple stretched bun, low puff, or braided style that's fresh and moisturised will always look more polished than elaborate styling on dry, neglected hair.
-  </div>
-</div>
-
-<!-- ════════════════════ STYLE TAB ════════════════════ -->
-<div id="tab-style" class="section">
-  <p class="sec-title">Looking Put Together</p>
-  <p class="sec-sub">Always neat, always intentional. This isn't about expensive clothes — it's about fit, colour, and grooming.</p>
-
-  <div class="highlight highlight-gold">
-    <h3>"Put Together" is 80% Grooming, 20% Clothes</h3>
-    <p>Clean skin, fresh hair, ironed clothes, and a confident posture will make a ₦3,000 outfit look like ₦30,000. Start there before buying anything new.</p>
-  </div>
-
-  <div class="label">Your Signature Style Formula</div>
-  <div class="card">
-    <div class="step-list">
-      <div class="step">
-        <div class="step-num num-gold">1</div>
-        <div class="step-body">
-          <div class="step-name">Fit Over Fashion</div>
-          <div class="step-note">Clothes that fit your body perfectly always look expensive. One well-fitting piece beats 5 ill-fitting ones. Tailor what you have if needed — a seamstress is cheap in Nigeria.</div>
-        </div>
-      </div>
-      <div class="step">
-        <div class="step-num num-gold">2</div>
-        <div class="step-body">
-          <div class="step-name">Build a Neutral Base</div>
-          <div class="step-note">Invest in: white tees, black trousers, nude/beige pieces, a good-fitting jeans, and one blazer. Everything else is accent.</div>
-        </div>
-      </div>
-      <div class="step">
-        <div class="step-num num-gold">3</div>
-        <div class="step-body">
-          <div class="step-name">Add Your Colour Accent</div>
-          <div class="step-note">As a dark-skinned woman, you look incredible in: earth tones (rust, terracotta, burnt orange), deep jewel tones (emerald, burgundy, cobalt), and bright whites and creams. Lean into these.</div>
-        </div>
-      </div>
-      <div class="step">
-        <div class="step-num num-gold">4</div>
-        <div class="step-body">
-          <div class="step-name">One Statement Piece Per Outfit</div>
-          <div class="step-note">Statement earrings, a bold bag, or a standout top — then keep everything else simple. Trying to do too much at once looks cluttered, not stylish.</div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="label">Outfit Formulas by Occasion</div>
-  <div class="card">
-    <div class="outfit-row">
-      <div class="outfit-occ">🏢 Office / Work Days</div>
-      <div class="outfit-name">Well-fitted trousers + tucked blouse + flat mules or block heels</div>
-      <div class="outfit-note">Keep it clean and structured. One piece of jewellery. Hair neat and moisturised. SPF on the face.</div>
-    </div>
-    <div class="outfit-row">
-      <div class="outfit-occ">🏠 Casual / Home / Errands</div>
-      <div class="outfit-name">Good-fitting jeans + simple tee or bodysuit + clean sneakers</div>
-      <div class="outfit-note">Even casual should look intentional. Iron your tee. Moisturise your skin. Do your edges.</div>
-    </div>
-    <div class="outfit-row">
-      <div class="outfit-occ">🌙 Evening / Going Out</div>
-      <div class="outfit-name">Midi dress or co-ord set in a rich tone + heels + minimal jewellery</div>
-      <div class="outfit-note">You don't need to show a lot of skin to look stunning. Coverage with elegance reads wealth.</div>
-    </div>
-    <div class="outfit-row">
-      <div class="outfit-occ">🙏 Sunday / Events</div>
-      <div class="outfit-name">Ankara or monochrome set + statement earrings + heels</div>
-      <div class="outfit-note">Lean into your culture. Ankara on a well-fitted silhouette is always elite.</div>
-    </div>
-  </div>
-
-  <div class="label">Non-Negotiable Grooming Habits</div>
-  <div class="two-col">
-    <div class="mini-card">
-      <div class="mini-icon">💅</div>
-      <div class="mini-title">Nails</div>
-      <div class="mini-note">Clean, shaped nails always. Even bare nails — keep them filed and moisturise your cuticles.</div>
-    </div>
-    <div class="mini-card">
-      <div class="mini-icon">👄</div>
-      <div class="mini-title">Lips</div>
-      <div class="mini-note">Moisturised lips, always. A simple tinted lip balm elevates your whole face.</div>
-    </div>
-    <div class="mini-card">
-      <div class="mini-icon">🦷</div>
-      <div class="mini-title">Teeth</div>
-      <div class="mini-note">Brush twice daily. Use charcoal or whitening toothpaste once a week. A bright smile is magnetic.</div>
-    </div>
-    <div class="mini-card">
-      <div class="mini-icon">👃</div>
-      <div class="mini-title">Fragrance</div>
-      <div class="mini-note">A signature scent makes you unforgettable. Apply to pulse points — wrists, neck, behind knees.</div>
-    </div>
-  </div>
-
-  <div class="tip">
-    <strong>Colours that make dark skin glow:</strong> Rust, terracotta, cobalt blue, emerald green, mustard yellow, burgundy, bright white, and champagne gold. These are your power colours.
-  </div>
-</div>
-
-<!-- ════════════════════ RITUALS TAB ════════════════════ -->
-<div id="tab-rituals" class="section">
-  <p class="sec-title">Your Daily Rituals</p>
-  <p class="sec-sub">What you do consistently every day compounds into the woman you become. These rituals are non-negotiable.</p>
-
-  <div class="label">Morning Ritual</div>
-  <div class="card">
-    <div class="ritual-row">
-      <div class="ritual-time">5–6am</div>
-      <div class="ritual-body">
-        <div class="ritual-name">Warm water + lemon</div>
-        <div class="ritual-note">First thing before anything else. Gut health, skin glow, digestion.</div>
-      </div>
-    </div>
-    <div class="ritual-row">
-      <div class="ritual-time">Morning</div>
-      <div class="ritual-body">
-        <div class="ritual-name">Morning skincare routine</div>
-        <div class="ritual-note">Cleanser → Vitamin C → Moisturiser → SPF. 5–7 minutes. Non-negotiable.</div>
-      </div>
-    </div>
-    <div class="ritual-row">
-      <div class="ritual-time">Morning</div>
-      <div class="ritual-body">
-        <div class="ritual-name">Protein breakfast</div>
-        <div class="ritual-note">Eggs + water. Fuels your skin, muscles, and focus. No cookies.</div>
-      </div>
-    </div>
-    <div class="ritual-row">
-      <div class="ritual-time">Morning</div>
-      <div class="ritual-body">
-        <div class="ritual-name">Dress with intention</div>
-        <div class="ritual-note">Even at home — dress like someone you respect. It changes how you move through the day.</div>
-      </div>
-    </div>
-  </div>
-
-  <div class="label">Evening Ritual</div>
-  <div class="card">
-    <div class="ritual-row">
-      <div class="ritual-time">7–8pm</div>
-      <div class="ritual-body">
-        <div class="ritual-name">Last meal — light and early</div>
-        <div class="ritual-note">No heavy carbs. Protein + vegetables. Your gut and your waistline both benefit.</div>
-      </div>
-    </div>
-    <div class="ritual-row">
-      <div class="ritual-time">Evening</div>
-      <div class="ritual-body">
-        <div class="ritual-name">Evening skincare + body care</div>
-        <div class="ritual-note">Cleanse → Niacinamide → Shea butter. Body lotion on damp skin. Vaseline on lips.</div>
-      </div>
-    </div>
-    <div class="ritual-row">
-      <div class="ritual-time">Evening</div>
-      <div class="ritual-body">
-        <div class="ritual-name">Castor oil on edges + satin bonnet</div>
-        <div class="ritual-note">Every night. No exceptions. Your edges will transform in 4–6 weeks.</div>
-      </div>
-    </div>
-    <div class="ritual-row">
-      <div class="ritual-time">10–11pm</div>
-      <div class="ritual-body">
-        <div class="ritual-name">7–8 hours of sleep</div>
-        <div class="ritual-note">Sleep is when your skin repairs, your muscles grow, your gut heals, and your cortisol resets. It is the most underrated beauty tool.</div>
-      </div>
-    </div>
-  </div>
-
-  <div class="label">Weekly Rituals</div>
-  <div class="card">
-    <div class="ritual-row">
-      <div class="ritual-time">Sunday</div>
-      <div class="ritual-body">
-        <div class="ritual-name">Full body scrub + wash day</div>
-        <div class="ritual-note">Dedicate 1–2 hours to yourself. Scrub, deep condition hair, do a face mask, paint your nails, rest.</div>
-      </div>
-    </div>
-    <div class="ritual-row">
-      <div class="ritual-time">Weekly</div>
-      <div class="ritual-body">
-        <div class="ritual-name">Plan your outfits for the week</div>
-        <div class="ritual-note">10 minutes on Sunday. Know what you're wearing before the week starts. It removes stress and keeps you consistently put together.</div>
-      </div>
-    </div>
-    <div class="ritual-row">
-      <div class="ritual-time">Weekly</div>
-      <div class="ritual-body">
-        <div class="ritual-name">Foot care</div>
-        <div class="ritual-note">Soak, scrub, vaseline + socks to bed. Soft feet = polished finish head to toe.</div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- ════════════════════ MINDSET TAB ════════════════════ -->
-<div id="tab-mindset" class="section">
-  <p class="sec-title">The Inner Glow Up</p>
-  <p class="sec-sub">Wealth, good luck, and attracting goodwill aren't random. They follow the woman you decide to become.</p>
-
-  <div class="highlight highlight-gold">
-    <h3>"Luck is what happens when preparation meets opportunity."</h3>
-    <p>The skincare, the fitness, the healthy eating, the style — none of it is vanity. It's all discipline. And discipline is the single most attractive and wealth-generating trait a person can have. You're already building it.</p>
-  </div>
-
-  <div class="label">Habits That Attract Goodwill & Wealth</div>
-  <div class="card">
-    <div class="step-list">
-      <div class="step">
-        <div class="step-num num-gold">1</div>
-        <div class="step-body">
-          <div class="step-name">Show Up Consistently</div>
-          <div class="step-note">In your work, your health, your relationships — people who show up consistently get trusted, promoted, and referred. Consistency is currency.</div>
-        </div>
-      </div>
-      <div class="step">
-        <div class="step-num num-gold">2</div>
-        <div class="step-body">
-          <div class="step-name">Take Up Space Confidently</div>
-          <div class="step-note">Speak clearly, stand tall, make eye contact. Confidence is not arrogance — it's knowing your worth and not shrinking. People give opportunities to people who seem like they're going somewhere.</div>
-        </div>
-      </div>
-      <div class="step">
-        <div class="step-num num-gold">3</div>
-        <div class="step-body">
-          <div class="step-name">Be Generous with Your Energy</div>
-          <div class="step-note">Goodwill flows to people who give it. Show up for others, be genuinely kind, celebrate people around you. What you put out returns — often multiplied.</div>
-        </div>
-      </div>
-      <div class="step">
-        <div class="step-num num-gold">4</div>
-        <div class="step-body">
-          <div class="step-name">Invest in Yourself First</div>
-          <div class="step-note">Your skills, your body, your mind, your appearance — investing in yourself is the highest-ROI investment available to you. Everything else follows.</div>
-        </div>
-      </div>
-      <div class="step">
-        <div class="step-num num-gold">5</div>
-        <div class="step-body">
-          <div class="step-name">Build a Second Income Stream</div>
-          <div class="step-note">Wealth rarely comes from one source. With your skills as a developer, freelancing, content creation, or a side project can begin generating foreign currency income — which you're already working toward.</div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="label">Your Timeline to a New You</div>
-  <div class="card">
-    <div class="outfit-row">
-      <div class="outfit-occ">Week 1–2</div>
-      <div class="outfit-name">Routines feel new and awkward</div>
-      <div class="outfit-note">Push through. This is the hardest part. Your skin will already start feeling better.</div>
-    </div>
-    <div class="outfit-row">
-      <div class="outfit-occ">Week 3–4</div>
-      <div class="outfit-name">Skin noticeably more hydrated and even</div>
-      <div class="outfit-note">Edges filling in. You'll catch yourself looking in the mirror differently.</div>
-    </div>
-    <div class="outfit-row">
-      <div class="outfit-occ">Month 2</div>
-      <div class="outfit-name">Others will start noticing</div>
-      <div class="outfit-note">Body changing, skin glowing, always put together. People will ask what you're doing.</div>
-    </div>
-    <div class="outfit-row">
-      <div class="outfit-occ">Month 3+</div>
-      <div class="outfit-name">This becomes who you are</div>
-      <div class="outfit-note">Not something you do — someone you are. That's when the real opportunities start showing up.</div>
-    </div>
-  </div>
-
-  <div class="tip">
-    <strong>The secret:</strong> You don't attract what you want. You attract what you are. Become the woman who is already wealthy, disciplined, healthy, and radiant — and everything you want will find its way to you.
-  </div>
-</div>
-
-<script>
-function showTab(name) {
-  document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
-  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
-  document.getElementById('tab-' + name).classList.add('active');
-  event.target.classList.add('active');
-}
-</script>
-</body>
+    <script>
+      function showTab(name) {
+        document
+          .querySelectorAll(".section")
+          .forEach((s) => s.classList.remove("active"));
+        document
+          .querySelectorAll(".tab")
+          .forEach((t) => t.classList.remove("active"));
+        document.getElementById("tab-" + name).classList.add("active");
+        event.target.classList.add("active");
+      }
+    </script>
+  </body>
 </html>
