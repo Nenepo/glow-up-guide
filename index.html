@@ -268,6 +268,7 @@
 
       .step {
         display: flex;
+        flex-direction: column;
         gap: 12px;
         align-items: flex-start;
         padding: 12px;
@@ -279,6 +280,9 @@
       .step-num {
         width: 28px;
         height: 28px;
+        /* width: fit-content;
+        height: fit-content; */
+        padding: 10px;
         border-radius: 50%;
         display: flex;
         align-items: center;
@@ -287,6 +291,27 @@
         font-weight: 700;
         flex-shrink: 0;
         color: white;
+      }
+
+      .step-label {
+        /* min-width: 28px;
+        min-height: 28px; */
+        text-wrap: nowrap;
+        width: 100%;
+        height: 100%;
+        padding: 8px 12px;
+        flex: 1;
+        border-radius: 10px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 11px;
+        font-weight: 700;
+        flex-shrink: 0;
+        color: white;
+        white-space: normal;
+        text-align: center;
+        line-height: 1.2;
       }
       .num-gold {
         background: var(--gold);
@@ -558,6 +583,7 @@
       <div class="tab" onclick="showTab('hair')">💆 Hair</div>
       <div class="tab" onclick="showTab('style')">👗 Style</div>
       <div class="tab" onclick="showTab('feet')">👣 Feet</div>
+      <div class="tab" onclick="showTab('nutrition')">🥗 Nutrition</div>
       <div class="tab" onclick="showTab('rituals')">🌅 Daily Rituals</div>
       <div class="tab" onclick="showTab('mindset')">💫 Mindset</div>
     </div>
@@ -1447,6 +1473,343 @@
         after bathing (especially between toes), change socks if they get damp,
         and wear breathable footwear when possible. Keep feet dry and they'll
         stay healthy.
+      </div>
+    </div>
+
+    <!-- ════════════════════ NUTRITION TAB ════════════════════ -->
+    <div id="tab-nutrition" class="section">
+      <p class="sec-title">Healthy Eating Blueprint</p>
+      <p class="sec-sub">
+        Intermittent fasting, balanced nutrition, and staying off processed
+        sugar for glowing skin, stable energy, and a fit body.
+      </p>
+
+      <div class="highlight highlight-gold">
+        <h3>Why Eating Matters for Your Glow</h3>
+        <p>
+          Your skin reflects what you eat. Sugar causes breakouts and
+          inflammation. A healthy eating routine with stable blood sugar gives
+          you clear skin, energy all day, stable weight, and that
+          lit-from-within glow. This isn't about restriction — it's about eating
+          intentionally.
+        </p>
+      </div>
+
+      <div class="label">Intermittent Fasting: Eat Between 2–6pm</div>
+      <div class="card">
+        <div class="step-list">
+          <div class="step">
+            <div class="step-label num-gold">Why</div>
+            <div class="step-body">
+              <div class="step-name">Benefits of IF (Intermittent Fasting)</div>
+              <div class="step-note">
+                Reduces bloating, improves digestion, stabilises blood sugar,
+                boosts metabolism, reduces cravings for junk food, and gives
+                your skin time to repair during fasting hours. You'll have
+                clearer skin and more consistent energy.
+              </div>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-label num-gold">How</div>
+            <div class="step-body">
+              <div class="step-name">Your Eating Window: 2pm–6pm</div>
+              <div class="step-note">
+                This is relatively easy to sustain. Morning: green tea, water,
+                black coffee (optional). Afternoon 2–6pm: eat 2–3 balanced
+                meals. After 6pm: only fruits, herbal tea, or light broth-based
+                pepper soup if hungry.
+              </div>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-label num-gold">Flexibility</div>
+            <div class="step-body">
+              <div class="step-name">You Don't Have to Do IF Every Day</div>
+              <div class="step-note">
+                Start with 3–4 days a week if every day feels too hard. Your
+                body will adapt. Even 2 days a week gives you skin clarity and
+                weight management benefits. Find what works for your body.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="label">Morning Routine (Before 2pm Eating Window)</div>
+      <div class="card">
+        <div class="step-list">
+          <div class="step">
+            <div class="step-num num-sage">1</div>
+            <div class="step-body">
+              <div class="step-name">Green Tea Upon Waking</div>
+              <div><span class="step-tag tag-am">Upon Waking</span></div>
+              <div class="step-note">
+                Warm water with green tea or just hot water with lemon. Boosts
+                metabolism, aids digestion, and is rich in antioxidants for
+                glowing skin. No sugar — drink it plain or with a tiny bit of
+                honey if needed.
+              </div>
+              <div class="step-product">
+                Green tea, chamomile, or ginger tea
+              </div>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num num-sage">2</div>
+            <div class="step-body">
+              <div class="step-name">Drink Plenty of Water</div>
+              <div><span class="step-tag tag-am">Morning</span></div>
+              <div class="step-note">
+                At least 500ml of water first thing. You're breaking a 12+ hour
+                fast. Water hydrates your skin from within and aids digestion
+                throughout the day.
+              </div>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num num-sage">3</div>
+            <div class="step-body">
+              <div class="step-name">Stay Busy Until 2pm</div>
+              <div class="step-note">
+                Work, exercise, or activities keep your mind off hunger. By 2pm
+                your first meal will feel satisfying, and you'll avoid mindless
+                snacking.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="label">Eating Window Meal Ideas (2–6pm)</div>
+      <div class="card">
+        <div class="step-list">
+          <div class="step">
+            <div class="step-label num-rose">First Meal<br />(2–3pm)</div>
+            <div class="step-body">
+              <div class="step-name">Balanced Protein + Carbs + Veggies</div>
+              <div class="step-note">
+                <strong>Examples:</strong><br />• Grilled chicken/fish + white
+                rice + steamed broccoli/carrots<br />• Eggs (fried, boiled, or
+                scrambled) + toast + sliced tomato & cucumber<br />• Beans +
+                plantain + peppered vegetables<br />• Pasta + protein sauce
+                (chicken/beef) + side salad
+              </div>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-label num-rose">
+              Mid-Afternoon<br />Snack (4pm)
+            </div>
+            <div class="step-body">
+              <div class="step-name">Fruit or Light Snack</div>
+              <div class="step-note">
+                <strong>Examples:</strong><br />• Apple with a tablespoon of
+                peanut butter<br />• Banana with a handful of almonds<br />•
+                Orange or fresh pineapple<br />• Yogurt (plain, unsweetened)<br />•
+                A small bowl of raw veggies (carrots, cucumber, peppers)
+              </div>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-label num-rose">Evening Meal<br />(5–6pm)</div>
+            <div class="step-body">
+              <div class="step-name">Lighter, Balanced Dinner</div>
+              <div class="step-note">
+                <strong>Examples:</strong><br />• Grilled fish/chicken + garlic
+                rice + steamed vegetables<br />• Pepper soup with beef/fish +
+                garri or fufu (light portion)<br />• Jollof rice with protein
+                and salad<br />• Vegetable soup with lean meat + yam<br />Eat by
+                6pm to give your stomach 12+ hours rest overnight.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="label">After 6pm Guidelines</div>
+      <div class="card">
+        <div class="step-list">
+          <div class="step">
+            <div class="step-label num-gold">Drink</div>
+            <div class="step-body">
+              <div class="step-name">Herbal Tea or Water Only</div>
+              <div class="step-note">
+                Green tea, chamomile, ginger tea, or plain water. Keep
+                hydrating. Your skin repairs at night — water supports this
+                process.
+              </div>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-label num-gold">If Hungry<br />After 6pm</div>
+            <div class="step-body">
+              <div class="step-name">Fruits or Light Pepper Soup</div>
+              <div class="step-note">
+                <strong>Acceptable options:</strong><br />• Fresh fruits:
+                watermelon, pineapple, orange, pawpaw<br />• Light pepper soup
+                (no garri/carbs — just the broth and vegetables)<br />• Herbal
+                tea with a piece of fruit<br /><br />Avoid: rice, bread, heavy
+                carbs, or sugar after 6pm.
+              </div>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-label num-gold">Sleep<br />10–11pm</div>
+            <div class="step-body">
+              <div class="step-name">Fasting Overnight (12–14 hours)</div>
+              <div class="step-note">
+                By skipping breakfast and eating only between 2–6pm, you give
+                your digestive system a long rest. This reduces bloating,
+                improves gut health, and boosts clarity and energy. Your body
+                does its best repair work in this fasted state.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="label">Foods to Add Regularly</div>
+      <div class="two-col">
+        <div class="mini-card">
+          <div class="mini-icon">🥬</div>
+          <div class="mini-title">Vegetables</div>
+          <div class="mini-note">
+            Broccoli, carrots, spinach, peppers, tomatoes. Add to every meal.
+            They're high in nutrients, low in calories, and flush out toxins for
+            clear skin.
+          </div>
+        </div>
+        <div class="mini-card">
+          <div class="mini-icon">🍌</div>
+          <div class="mini-title">Fruits</div>
+          <div class="mini-note">
+            Bananas, oranges, pineapple, watermelon, pawpaw. Eat during eating
+            window or after 6pm. Rich in vitamins for glowing skin.
+          </div>
+        </div>
+        <div class="mini-card">
+          <div class="mini-icon">🥚</div>
+          <div class="mini-title">Protein</div>
+          <div class="mini-note">
+            Eggs, fish, chicken, lean beef, beans. Keep muscles strong, support
+            skin health, and keep you full longer.
+          </div>
+        </div>
+        <div class="mini-card">
+          <div class="mini-icon">🌾</div>
+          <div class="mini-title">Whole Grains</div>
+          <div class="mini-note">
+            Brown rice, oats, whole wheat bread. Better for digestion and energy
+            than white carbs. Oats are especially good for morning meals.
+          </div>
+        </div>
+      </div>
+
+      <div class="label">Breakfast Alternatives (On Non-IF Days)</div>
+      <div class="card">
+        <div class="step-list">
+          <div class="step">
+            <div class="step-num num-sage">1</div>
+            <div class="step-body">
+              <div class="step-name">Oats + Fruit</div>
+              <div class="step-note">
+                Simple: oats + hot water/milk + sliced banana or berries + a
+                drizzle of honey (skip sugar). Takes 5 minutes, keeps you full
+                until lunch, and is amazing for digestion and skin clarity.
+              </div>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num num-sage">2</div>
+            <div class="step-body">
+              <div class="step-name">Banana Oat Pancakes</div>
+              <div class="step-note">
+                <strong>Recipe (2 servings):</strong><br />1. Blend 2 bananas +
+                1/2 cup oats + 1 egg + pinch of cinnamon<br />2. Pour onto a
+                non-stick pan<br />3. Cook like pancakes (2–3 min each side)<br />4.
+                Top with fresh fruit or a tiny drizzle of honey<br /><br />Naturally
+                sweet, no processed sugar, packed with fibre and protein. Makes
+                you feel full until 2pm.
+              </div>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num num-sage">3</div>
+            <div class="step-body">
+              <div class="step-name">
+                Scrambled Eggs + Whole Grain Toast + Tomato
+              </div>
+              <div class="step-note">
+                Protein-rich, simple, satisfying. Keeps blood sugar stable and
+                prevents mid-morning energy crashes that lead to sugar cravings.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="label">Sugar Elimination (Your Secret Weapon)</div>
+      <div class="card">
+        <div class="step-list">
+          <div class="step">
+            <div class="step-label num-gold">What Sugar<br />Does</div>
+            <div class="step-body">
+              <div class="step-name">
+                Causes Breakouts, Bloating, Weight Gain, Energy Crashes
+              </div>
+              <div class="step-note">
+                Sugar spikes insulin, triggers inflammation in your skin
+                (causing breakouts), feeds bad gut bacteria, and leads to
+                cravings that keep you stuck. Staying off it is one of the
+                fastest ways to clear skin and feel energised.
+              </div>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-label num-gold">Foods to<br />Avoid</div>
+            <div class="step-body">
+              <div class="step-name">Processed Sugar & Hidden Sugars</div>
+              <div class="step-note">
+                <strong>Obvious:</strong> Soft drinks, sweets, cakes, biscuits,
+                pastries, ice cream<br /><strong
+                  >Hidden sugar (read labels!):</strong
+                >
+                Packaged fruit juice, flavoured yogurt, breakfast cereals, sweet
+                bread, ketchup, sauce mixes<br /><br />When you want something
+                sweet: eat fruit, have a tiny piece of dark chocolate (70%+
+                cacao), or drink tea with honey.
+              </div>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-label num-gold">First 2<br />Weeks</div>
+            <div class="step-body">
+              <div class="step-name">
+                After 2 Weeks, Your Cravings Drop Significantly
+              </div>
+              <div class="step-note">
+                Your taste buds reset. After 3 weeks, a regular sweet snack will
+                taste too sweet. By week 4, you won't even want it. Push through
+                the first 2 weeks — the payoff in clear skin and energy is worth
+                it.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tip">
+        <strong>Start simple:</strong> You don't have to do IF every day. Start
+        with 2–3 days a week, add vegetables to all your meals, swap sugar for
+        fruit, and drink green tea in the morning. These alone will clear your
+        skin and give you stable energy within 2–3 weeks.
+      </div>
+
+      <div class="tip">
+        <strong>Hydration is key:</strong> 2–3 litres of water daily (more if
+        you're doing IF). Water supports digestion, flushes out toxins, and is
+        the foundation of glowing skin. Make it your priority.
       </div>
     </div>
 
